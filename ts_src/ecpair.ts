@@ -56,7 +56,7 @@ class ECPair implements ECPairInterface {
     if (options === undefined) options = {};
     this.compressed =
       options.compressed === undefined ? true : options.compressed;
-    this.network = options.network || NETWORKS.bitcoin;
+    this.network = options.network || NETWORKS.verge;
 
     if (__Q !== undefined) this.__Q = ecc.pointCompress(__Q, this.compressed);
   }
