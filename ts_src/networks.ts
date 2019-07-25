@@ -14,16 +14,16 @@ interface Bip32 {
   private: number;
 }
 
-export const bitcoin: Network = {
-  messagePrefix: '\x18Bitcoin Signed Message:\n',
+export const verge: Network = {
+  messagePrefix: '\x18Verge Signed Message:\n',
   bech32: 'bc',
   bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
+    public: 0x022d2533,
+    private: 0x0221312b,
   },
-  pubKeyHash: 0x00,
-  scriptHash: 0x05,
-  wif: 0x80,
+  pubKeyHash: 0x1e,
+  scriptHash: 0x21,
+  wif: 0x9e,
 };
 export const regtest: Network = {
   messagePrefix: '\x18Bitcoin Signed Message:\n',
