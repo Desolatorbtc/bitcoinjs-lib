@@ -1,5 +1,5 @@
 import * as bcrypto from '../crypto';
-import { bitcoin as BITCOIN_NETWORK } from '../networks';
+import { verge as VERGE_NETWORK } from '../networks';
 import * as bscript from '../script';
 import { Payment, PaymentOpts, StackFunction } from './index';
 import * as lazy from './lazy';
@@ -62,7 +62,7 @@ export function p2wsh(a: Payment, opts?: PaymentOpts): Payment {
 
   let network = a.network;
   if (!network) {
-    network = (a.redeem && a.redeem.network) || BITCOIN_NETWORK;
+    network = (a.redeem && a.redeem.network) || VERGE_NETWORK;
   }
 
   const o: Payment = { network };
