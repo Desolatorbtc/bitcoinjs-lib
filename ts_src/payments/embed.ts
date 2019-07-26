@@ -1,4 +1,4 @@
-import { bitcoin as BITCOIN_NETWORK } from '../networks';
+import { verge as VERGE_NETWORK } from '../networks';
 import * as bscript from '../script';
 import { Payment, PaymentOpts, Stack } from './index';
 import * as lazy from './lazy';
